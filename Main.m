@@ -60,7 +60,7 @@ results = cell(0);
 % parameters{end+1} = compose_struct_MSD(compute_window(20/100), false);
 % parameters{end+1} = compose_struct_MSD(compute_window(40/100), false);
 % parameters{end+1} = compose_struct_PCA(compute_window(20/100), compute_window(20/100), 1);
-% parameters{end+1} = compose_struct_PCA(compute_window(40/100), compute_window(40/100), 1);
+parameters{end+1} = compose_struct_PCA(compute_window(40/100), compute_window(40/100), 1);
 
 % For Window analysis
 % parameters{end+1} = compose_struct_PCA(compute_window(20/100), compute_window(10/100), 1);

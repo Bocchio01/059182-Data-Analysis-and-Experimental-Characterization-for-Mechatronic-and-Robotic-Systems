@@ -52,8 +52,20 @@ P095_UB = icdf(pd_ub, 0.95);
 
 b = size(F0, 1);
 t_PCA = sum(d0 > P095) / b;
-t_PCA_up = sum(d0 > P095_LB) / b;
-t_PCA_lo = sum(d0 > P095_UB) / b;
+t_PCA_up = sum(d0 > P095_UB) / b;
+t_PCA_lo = sum(d0 > P095_LB) / b;
+
+t_PCA_up / t_PCA
+t_PCA_lo / t_PCA
+
+hold on;
+plot(probability_distribution_obj)
+plot(pd_ub)
+plot(pd_lb)
+plot([P095_LB P095_LB], [0 0.16], 'r--');
+plot([P095 P095], [0 0.16], 'r--');
+plot([P095_UB P095_UB], [0 0.16], 'r--');
+ylabel('Probability Density');
 
 end
 
